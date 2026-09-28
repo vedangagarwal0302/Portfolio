@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedang Agarwal | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Vedang Agarwal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#ctf">CTF</a></li>
+                    <li><a href="#learning">Learning</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Hi, I'm Vedang Agarwal</h2>
+            <p class="headline">Aspiring Cybersecurity Professional & SOC Analyst</p>
+            <p class="bio-summary">Documenting my hands-on journey through defensive security, threat detection, and continuous labs.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h3 class="section-title">About Me</h3>
+            <div class="about-card">
+                <p>Hello! I am Vedang Agarwal, an aspiring cybersecurity professional building practical skills in threat analysis, incident response, and security engineering. This portfolio showcases my hands-on projects, lab investigations, and CTF challenges rather than just listing certifications on a traditional CV.</p>
+                <div class="career-goal">
+                    <h4><strong>Career Goal:</strong></h4>
+                    <p>To secure a role as a Security Operations Center (SOC) Analyst or Cybersecurity Analyst where I can help organizations proactively detect and mitigate threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h3 class="section-title">Projects</h3>
+            <div class="grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h4>Phishing Email Investigation & Analysis</h4>
+                    <p class="project-tag">Incident Response</p>
+                    <p>Analyzed suspicious email headers, checked malicious domains, and extracted indicators of compromise (IOCs).</p>
+                    <button class="btn-details" onclick="openModal('modal-phishing')">View Investigation</button>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <h4>Mini SOC Lab for Threat Detection</h4>
+                    <p class="project-tag">SIEM & Monitoring</p>
+                    <p>Built a home lab environment simulating brute-force attacks and setting up log analysis alerts.</p>
+                    <button class="btn-details" onclick="openModal('modal-soc')">View Investigation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTF Section -->
+    <section id="ctf" class="section">
+        <div class="container">
+            <h3 class="section-title">CTF Competitions</h3>
+            <div class="card">
+                <h4>Cybersecurity Capture The Flag (CTF)</h4>
+                <p class="badge-place">🥈 2nd Place Finish</p>
+                <p><strong>Challenges Solved:</strong> Web exploitation, log analysis, and reverse engineering.</p>
+                <p><strong>Key Takeaways:</strong> Gained practical experience in dissecting payloads and identifying vulnerable service parameters under time constraints.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Learning Section -->
+    <section id="learning" class="section bg-light">
+        <div class="container">
+            <h3 class="section-title">Practical Learning & Labs</h3>
+            <div class="card">
+                <h4>TryHackMe (THM) & SOC Level 1 Path</h4>
+                <p>Completed hands-on defensive security labs focusing on network security, endpoint security, SIEM fundamentals, and incident response.</p>
+                <ul class="learning-list">
+                    <li>Completed comprehensive SOC Level 1 path modules.</li>
+                    <li>Performed log analysis using Splunk and ELK stack.</li>
+                    <li>Investigated simulated web attacks and Windows event logs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h3 class="section-title">Certifications</h3>
+            <div class="grid">
+                <div class="card cert-card">
+                    <h4>Google Cybersecurity Professional Certificate</h4>
+                    <p>Mastered Linux, SQL, Python, SIEM tools (Splunk), and Packet Analysis, along with foundational frameworks like NIST.</p>
+                </div>
+                <div class="card cert-card">
+                    <h4>TryHackMe SOC Level 1 Pathway</h4>
+                    <p>Hands-on training covering threat intelligence, security operations, and log investigation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Links Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container text-center">
+            <h3 class="section-title">Let's Connect</h3>
+            <p>Find my work and profiles across the web:</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://tryhackme.com" target="_blank"><i class="fas fa-shield-alt"></i> TryHackMe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Vedang Agarwal. Built with AI & GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Projects -->
+    <div id="modal-phishing" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-phishing')">&times;</span>
+            <h3>Phishing Email Investigation & Analysis</h3>
+            <p><strong>Why I Built It:</strong> To understand how threat actors deliver malware and credential-harvesting links via email vectors.</p>
+            <p><strong>Objective:</strong> Parse email headers, uncover originating IP addresses, and evaluate attachment safety.</p>
+            <p><strong>Tools Used:</strong> Message Header Analyzer, VirusTotal, CyberChef.</p>
+            <p><strong>What I Did:</strong> Extracted raw headers, traced SMTP hops, checked sender reputation, and isolated embedded URLs.</p>
+            <p><strong>Outcome:</strong> Successfully created an Incident Report mapping out indicators of compromise (IOCs) for security hardening.</p>
+        </div>
+    </div>
+
+    <div id="modal-soc" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-soc')">&times;</span>
+            <h3>Mini SOC Lab for Threat Detection</h3>
+            <p><strong>Why I Built It:</strong> To gain direct experience with Security Information and Event Management (SIEM) rules.</p>
+            <p><strong>Objective:</strong> Detect brute-force login attempts against local test endpoints.</p>
+            <p><strong>Tools Used:</strong> Splunk, VirtualBox, Windows Event Viewer.</p>
+            <p><strong>What I Did:</strong> Configured log forwarding, generated simulated authentication failure traffic, and wrote custom query filters.</p>
+            <p><strong>Outcome:</strong> Developed alert triggers capable of notifying analysts upon repeated login failures.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
